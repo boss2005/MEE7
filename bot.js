@@ -428,7 +428,7 @@ var prefix = "-"
  
       let fillter = m => m.author.id === rokz.author.id
  
-      await rokz.channel.send("**ما لغت البرمجه الخاصه بك ؟**").then(e => {
+      await rokz.channel.send("** ما هي الرتبهة**").then(e => {
  
      rokz.channel.awaitMessages(fillter, { time: 60000, max: 1 })
  
@@ -451,7 +451,7 @@ var prefix = "-"
           col.first().delete();
  
  
-            e.edit(`مدة خبرتك ؟
+            e.edit(`هل ستتفاعل؟ ؟
 [${time}]
 [${lang}]`)
  
@@ -478,9 +478,9 @@ var prefix = "-"
               }, 3000)
  
               rokzz.send(`
-» اللغة : **${lang}**
+» ما هي الرتبه التي يريدها: **${lang}**
 » الاسم و العمر : **${time}**
-» الخبرة : **${expe}**
+» هل سيتفاعل؟ : **${expe}**
 تم التقديم بواسطة: ${rokz.author}
 `).then(rokzzz => {
  
